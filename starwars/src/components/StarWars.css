@@ -9,19 +9,44 @@
 .charAttributes {
     width: 40%;
     margin: 50px auto;
-    background-color: rgb(255, 247, 235);
-    border-radius: 6px;
     padding: 1%;
-    
+    border-radius: 29px;
+
+    animation-name: out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes out {
+    0% {background-color: white; border-radius: 29px;}
+    100% {background-color: rgb(255, 247, 235); border-radius: 6px;}
+    }
+
 .charAttributes:hover {
-    background-color: white;
-    border-radius: 29px;
+    animation-name: in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
     box-shadow: 2px 2px 7px 1px rgb(82, 82, 82);
     cursor: pointer;
 }
 
+@keyframes in {
+0% {background-color: rgb(255, 247, 235); border-radius: 6px;}
+100% {background-color: white; border-radius: 29px;}
+}
+
+
 p {
     font-weight: 400;
+}
+
+h2 {
+    transition: transform .2s;
+
+}
+
+h2:hover {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 1px rgb(149, 143, 240);
 }
