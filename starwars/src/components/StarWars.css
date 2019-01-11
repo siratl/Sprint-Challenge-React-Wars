@@ -18,7 +18,7 @@
 }
 
 @keyframes out {
-    0% {background-color: white; border-radius: 29px;}
+    0% {background-color: white; border-radius: 29px; box-shadow: 2px 2px 7px 1px rgb(82, 82, 82);}
     100% {background-color: rgb(255, 247, 235); border-radius: 6px;}
     }
 
