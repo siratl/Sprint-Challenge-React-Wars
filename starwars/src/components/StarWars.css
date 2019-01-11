@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.charList {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.charAttributes {
+    width: 40%;
+    margin: 50px auto;
+    background-color: rgb(255, 247, 235);
+    border-radius: 6px;
+    padding: 1%;
+    
+}
+
+.charAttributes:hover {
+    background-color: white;
+    border-radius: 29px;
+    box-shadow: 2px 2px 7px 1px rgb(82, 82, 82);
+    cursor: pointer;
+}
+
+p {
+    font-weight: 400;
+}
